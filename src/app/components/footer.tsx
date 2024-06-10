@@ -1,12 +1,13 @@
 import Image from "next/image";
 import Link from "next/link";
+import logoImg from '/public/logo.svg'
 
 export function Footer(){
   return(
     <footer className="bg-[#F3EEE3]">
       <div className="flex items-center justify-between p-4 max-w-[1200px] m-auto">
         <div className="flex items-center gap-4">
-          <Image src='/public/logo.svg' alt="pano logo image"/>
+          <Image src={logoImg} width={200} alt="pano logo image"/>
           <p className="font-medium">© 2024 Pano by Plain Sight Ventures</p>
         </div>
         <div className="flex items-center gap-6">

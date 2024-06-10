@@ -1,4 +1,5 @@
 import Image from "next/image";
+import customers from '/public/customers.svg'
 import { Zap } from "lucide-react";
 
 export default function Home() {
@@ -19,7 +20,7 @@ export default function Home() {
           Get started free
         </button>
         <div className="mb-20">
-          <Image src="/public/customers.svg" alt="customers image" className="rounded-2xl border-8 border-[#04DA00] shadow-md shadow-[#04DA00]"/>
+          <Image src={customers} alt="customers image" className="rounded-2xl border-8 border-[#04DA00] shadow-md shadow-[#04DA00]"/>
         </div>
         <div className="max-w-[1200px] p-8 m-auto bg-[url('/integration.svg')] flex items-center h-[780px] gap-4 rounded-[80px]">
           <div className="flex flex-col">
