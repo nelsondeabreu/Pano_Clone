@@ -1,6 +1,7 @@
 import Image from "next/image";
 import customers from '/public/customers.svg'
-import { Zap } from "lucide-react";
+import { MessageCircleMore, Sparkles, Zap } from "lucide-react";
+import Pano_image from '../../public/pano.svg'
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
           perfect time.
         </p>
       </section>
+      
       <section className="bg-[url('/hero-img.svg')] w-full h-[1799.06px] flex flex-col items-center">
         <button className="bg-black text-white text-center font-semibold w-[250px] h-[68px] rounded-full hover:bg-[#04DA00] transition-all duration-300 mt-24 mb-20">
           Get started free
@@ -39,6 +41,61 @@ export default function Home() {
           </div>
         </div>
       </section>
-    </main>
+
+      <section className="bg-[#F3EEE3] w-full h-[1799.06px] flex flex-col items-center">
+
+        <div className="max-w-[1200px] bg-cover bg-no-repeat p-8 m-auto bg-[url('/persona.svg')] flex items-center h-[780px] gap-4 rounded-[80px]">
+          
+          <div className="w-[639px] "></div>
+
+          <div className="flex flex-col">
+              <div className="w-12 h-12 p-2 rounded-full bg-[#04DA00] mt-10 mb-6">
+                <Sparkles className="w-8 h-8"/>
+              </div>
+              <h1 className="text-5xl font-bold mb-8">Personalizy what you <br /> <span className="text-[#04DA00]">see and do</span></h1>
+              <p className="text-lg mb-24">
+                No more coding or lengthy onboarding requirements. <br />
+                Pano integrates directly with your tech stack, so you <br /> can launch in a matter of minutes, not months.
+              </p>
+              <p className="font-bold">See all integrations</p>
+          </div>
+        </div>
+      </section>
+
+      <section className="bg-[#F3EEE3] w-full h-[1799.06px] flex flex-col items-center">
+
+        <div className="max-w-[1200px] bg-cover bg-no-repeat p-8 m-auto bg-[url('/webmerge.svg')] flex items-center h-[780px] gap-4 rounded-[80px]">
+          
+          <div className="flex flex-col">
+              <div className="w-12 h-12 p-2 rounded-full bg-[#04DA00] mt-10 mb-6">
+              <MessageCircleMore className="w-8 h-8" />
+              </div>
+              <h1 className="text-5xl font-bold mb-8">Move from reacting to<br /> <span className="text-[#04DA00]">responding</span></h1>
+              <p className="text-lg mb-24">
+                No more coding or lengthy onboarding requirements. <br />
+                Pano integrates directly with your tech stack, so you <br /> can launch in a matter of minutes, not months.
+              </p>
+              <p className="font-bold">See all integrations</p>
+          </div>
+
+          <div className="w-[639px] "></div>
+        </div>
+      </section>
+
+      <section className="bg-[/pano-split.image.svg] w-full h-[1799.06px] flex flex-col items-center">
+
+        <div className="max-w-[1200px] bg-cover bg-no-repeat p-8 m-auto bg-[url('/pano-split.image.svg')] flex items-center justify-center h-[780px] gap-4 rounded-[80px]">
+          
+          <div className="flex flex-col border border-black">
+              <button></button>
+          </div>
+
+          <div className="w-[639px] h-92 border border-white">
+            <Image src={Pano_image} alt="pano-image"/>
+          </div>
+
+        </div>
+      </section>
+  </main>
   );
 }
